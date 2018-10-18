@@ -41,7 +41,6 @@ Add the middleware globally:
 protected $middleware = [
     Mtownsend\RequestXml\Middleware\XmlRequest::class,
 ];
-Mtownsend\RequestXml\Middleware\XmlRequest::class,
 ```
 
 Add the middleware to web routes:
