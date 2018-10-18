@@ -64,7 +64,7 @@ class RequestXmlServiceProvider extends ServiceProvider
      */
     protected function registerXml()
     {
-        Request::macro('xml', function ($assoc = true) {
+        Request::macro('xml', function () {
             if (!$this->isXml()) {
                 return [];
             }
