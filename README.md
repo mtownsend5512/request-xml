@@ -35,7 +35,7 @@ It's important to register the middleware so your application can convert an XML
 
 To setup the middleware, open up your ``app/Http/Kernel.php`` file.
 
-Add the middleware globally:
+To add the middleware globally:
 
 ```php
 protected $middleware = [
@@ -43,7 +43,7 @@ protected $middleware = [
 ];
 ```
 
-Add the middleware to web routes:
+To add the middleware to web routes only:
 
 ```php
 protected $middlewareGroups = [
@@ -53,7 +53,7 @@ protected $middlewareGroups = [
 ];
 ```
 
-Add the middleware to api routes:
+To add the middleware to api routes only:
 
 ```php
 protected $middlewareGroups = [
@@ -63,7 +63,7 @@ protected $middlewareGroups = [
 ];
 ```
 
-Named middleware for specific uses:
+Or, if you want named middleware for specific routes:
 
 ```php
 protected $routeMiddleware = [
