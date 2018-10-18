@@ -1,0 +1,45 @@
+{
+    "name": "mtownsend/request-xml",
+    "description": "The missing XML support for Laravel's Request class.",
+    "keywords": [
+        "request",
+        "laravel",
+        "xml",
+        "isXml",
+        "wantsXml"
+    ],
+    "authors": [
+        {
+            "name": "Mark Townsend",
+            "email": "mtownsend5512@gmail.com",
+            "role": "Developer"
+        }
+    ],
+	"autoload": {
+        "psr-4": {
+            "Mtownsend\\RequestXml\\": "src"
+        }
+    },
+    "require": {
+        "php": "~7.0",
+        "illuminate/support": "^5.3",
+        "illuminate/http": "^5.2",
+        "mtownsend/xml-to-array": "~1.0"
+    },
+    "require-dev": {
+      "phpunit/phpunit": "^6.4"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mtownsend\\RequestXml\\Test\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mtownsend\\RequestXml\\Providers\\RequestXmlServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}
