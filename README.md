@@ -39,9 +39,7 @@ Add the middleware globally:
 
 ```php
 protected $middleware = [
-	...
     Mtownsend\RequestXml\Middleware\XmlRequest::class,
-    ...
 ];
 Mtownsend\RequestXml\Middleware\XmlRequest::class,
 ```
@@ -80,7 +78,7 @@ protected $routeMiddleware = [
 
 ```php
 if (request()->wantsXml()) {
-	// send xml response
+    // send xml response
 }
 ```
 
@@ -88,7 +86,7 @@ if (request()->wantsXml()) {
 
 ```php
 if (request()->isXml()) {
-	// do something
+    // do something
 }
 ```
 
