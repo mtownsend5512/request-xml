@@ -6,7 +6,8 @@
         "laravel",
         "xml",
         "isXml",
-        "wantsXml"
+        "wantsXml",
+        "api"
     ],
     "authors": [
         {
