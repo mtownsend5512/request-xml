@@ -1,5 +1,7 @@
 The missing XML support for Laravel's Request class.
 
+This package is designed to work with the [Laravel](https://laravel.com) framework.
+
 ## Installation
 
 Install via composer:
@@ -142,6 +144,7 @@ Have you ever wondered why Laravel offered useful methods for transforming data 
 ## Other packages you may be interested in
 
 - [mtownsend/collection-xml](https://github.com/mtownsend5512/collection-xml)
+- [mtownsend/response-xml](https://github.com/mtownsend5512/response-xml)
 - [mtownsend/xml-to-array](https://github.com/mtownsend5512/xml-to-array)
 
 ## Credits
