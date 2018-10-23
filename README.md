@@ -35,7 +35,9 @@ $app->register(Mtownsend\RequestXml\Providers\RequestXmlServiceProvider::class);
 
 It's important to register the middleware so your application can convert an XML request and merge it into the Request object. You will then be able to run XML through Laravel's powerful validation system.
 
-**Once you register the middleware, you do not need to do anything special to access your request xml. It will be available in the Request object like it would if it was a json or form request.**
+**Please note:**
+
+Once you register the middleware, you do not need to do anything special to access your request xml. It will be available in the Request object like it would if it was a json or form request.
 
 To setup the middleware, open up your ``app/Http/Kernel.php`` file.
 
@@ -131,7 +133,7 @@ $xml = collect(request()->xml());
 
 ## Exceptions
 
-In the event invalid XML is received in a request, the application will throw an Exception containing the raw, invalid XML: If you would like to handle this exception whenever it occurs in your application, you can easily catch it and supply your own code in your applications ``app/Exceptions/Handler.php`` like so:
+In the event invalid XML is received in a request, the application will throw an Exception containing the raw, invalid XML. If you would like to handle this exception whenever it occurs in your application, you can easily catch it and supply your own code in your applications ``app/Exceptions/Handler.php`` like so:
 
 ```php
 if ($exception instanceof \Mtownsend\RequestXml\Exceptions\CouldNotParseXml) {
