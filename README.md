@@ -154,7 +154,15 @@ Have you ever wondered why Laravel offered useful methods for transforming data 
 ## Credits
 
 - Mark Townsend
-- All Contributors
+- [All Contributors](../../contributors)
+
+## Testing
+
+You can run the tests with:
+
+```bash
+./vendor/bin/phpunit
+```
 
 ## License
 
