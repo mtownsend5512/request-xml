@@ -45,7 +45,7 @@ To add the middleware globally:
 
 ```php
 protected $middleware = [
-    Mtownsend\RequestXml\Middleware\XmlRequest::class,
+    \Mtownsend\RequestXml\Middleware\XmlRequest::class,
 ];
 ```
 
