@@ -74,7 +74,7 @@ class RequestXml extends TestCase
     public function request_can_retrieve_xml_as_array()
     {
         $request = $this->createDummyRequest(['CONTENT_TYPE' => 'application/xml'], $this->testXml);
-        $this->assertInternalType('array', $request->xml());
+        $this->assertIsArray($request->xml());
     }
 
     /** @test */
