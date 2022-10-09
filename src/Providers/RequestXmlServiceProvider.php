@@ -41,7 +41,7 @@ class RequestXmlServiceProvider extends ServiceProvider
     protected function registerWantsXml()
     {
         Request::macro('wantsXml', function () {
-            return Str::contains($this->header('Accept'), 'xml');
+            return Str::contains($this->header('Accept') ?? '', 'xml');
         });
     }
 
