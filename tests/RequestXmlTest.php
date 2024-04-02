@@ -5,7 +5,7 @@ use Mtownsend\RequestXml\Providers\RequestXmlServiceProvider;
 use PHPUnit\Framework\TestCase;
 use ReflectionClass as Reflect;
 
-class RequestXml extends TestCase
+class RequestXmlTest extends TestCase
 {
 
     /** @test array */
