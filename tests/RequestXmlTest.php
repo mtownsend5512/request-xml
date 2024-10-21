@@ -83,4 +83,12 @@ class RequestXmlTest extends TestCase
         $request = $this->createDummyRequest(['CONTENT_TYPE' => 'application/xml'], $this->testXml);
         $this->assertEquals($request->xml(), $this->testArray);
     }
+
+    /** @test */
+    public function request_with_xml_content_type_and_empty_payload()
+    {
+        $request = $this->createDummyRequest(['CONTENT_TYPE' => 'application/xml']);
+        $this->assertEquals($request->xml(), []);
+        $this->assertTrue($request->isXml());
+    }
 }
