@@ -69,7 +69,7 @@ class RequestXmlServiceProvider extends ServiceProvider
     protected function registerXml()
     {
         Request::macro('xml', function () {
-            if (!$this->isXml() or empty($this->getContent())) {
+            if (!$this->isXml() || empty($this->getContent())) {
                 return [];
             }
             try {
